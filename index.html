@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="The Language of Motion: Unifying Verbal and Non-verbal Language of 3D Human Motion">
+  <meta name="keywords" content="LLM, Motion generation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Language of Motion: Unifying Verbal and Non-verbal Language of 3D Human Motion.</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <!-- Fonts and CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <!-- JS Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            The Language of Motion:<br> Unifying Verbal and Non-verbal Language of 3D Human Motion
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="https://changan.io/">Changan Chen</a>,</span>
+            <span class="author-block"><a href="https://scholar.google.com.hk/citations?user=qbovRUIAAAAJ">Juze Zhang</a>,</span>
+            <span class="author-block"><a href="https://scholar.google.com.hk/citations?user=UjpM6IAAAAAJ&hl=zh-CN&oi=ao">Shrinidhi Kowshika Lakshmikanth</a>,</span>
+            <span class="author-block"><a>Yusu Fang</a>,</span>
+            <span class="author-block"><a href="https://dsaurus.github.io/saurus/">Ruizhi Shao</a>,</span> <br>
+            <span class="author-block"><a href="https://stanford.edu/~gordonwz/">Gordon Wetzstein</a>,</span>
+            <span class="author-block"><a href="https://profiles.stanford.edu/fei-fei-li">Li Fei-Fei</a>,</span>
+            <span class="author-block"><a href="https://stanford.edu/~eadeli/">Ehsan Adeli</a></span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Stanford University</span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="xxx" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-youtube"></i></span><span>Video</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="xxx" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image Section -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <p><img src="./material_figure/teaser.png" alt="" style="max-width:100%;"></p>
+    </div>
+  </div>
+</section>
+
+<!-- Abstract Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>Human communication is inherently multimodal, involving a combination of verbal and
+            non-verbal cues such as speech, facial expressions, and body gestures. Modeling these
+            behaviors is essential for understanding human interaction and for creating virtual
+            characters that can communicate naturally in applications like games, films, and
+            virtual reality. However, existing motion generation models are typically limited to
+            specific input modalities—either speech, text, or motion data—and cannot fully leverage the
+            diversity of available data. In this paper, we propose a novel framework that unifies verbal
+            and non-verbal language using multimodal language models for human motion understanding and
+            generation. This model is flexible in taking text, speech, and motion or any combination of
+            them as input. Coupled with our novel pre-training strategy, our model not only achieves
+            state-of-the-art performance on co-speech gesture generation but also requires much less data
+            for training. Our model also unlocks an array of novel tasks such as editable gesture generation
+            and emotion prediction from motion. We believe unifying the verbal and non-verbal language of
+            human motion is essential for real-world applications, and language models offer a powerful approach
+            to achieving this goal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Framework Section -->
+<section class="Pipeline">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h2 class="title is-3">Multimodal Language Model Framework</h2>
+          <div class="teaser-image">
+            <img src="./material_figure/pipeline.png" alt="Multimodal Framework" style="max-width:100%; height:auto;">
+          </div>
+            <h3 class="subtitle has-text-justified" style="font-size: 15px; line-height: 1.5; text-align: justify;">
+              We employ modality-specific tokenizers to process various input modalities. Specifically, we train a
+              compositional body motion VQ-VAE to tokenize face, hands, upper body, and lower body motions into
+              discrete tokens, combining these modalityspecific vocabularies(audio and text) into a unified multimodal
+              vocabulary. During training, mixed tokens from different modalities are used as input, and the output is
+              generated through an encoder-decoder language model. The mixed tokens are fed into the transformer encoder,
+              while the decoder predicts the probability distribution of the next token in an autoregressive manner at each step.
+            </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- video title -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Co-speech Gesture Generation</h2>
+      </div>
+    </div>
+
+    <!-- video content -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <video id="example-video" autoplay muted loop controls playsinline style="width:100%; height:auto; margin-bottom:15px;">
+          <source src="./material_figure/co-speech.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+<!--    &lt;!&ndash; video caption &ndash;&gt;-->
+<!--    <div class="columns is-centered has-text-centered">-->
+<!--      <div class="column is-four-fifths">-->
+<!--        <p class="subtitle is-5">This is an example caption describing the content of the video, its significance, or any other contextual information.</p>-->
+<!--      </div>-->
+<!--    </div>-->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- video title -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Editable Gesture Generation</h2>
+      </div>
+    </div>
+
+    <!-- video content -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <video id="example-video" autoplay muted loop controls playsinline style="width:100%; height:auto; margin-bottom:15px;">
+          <source src="./material_figure/editable.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- video title -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Text-to-motion Generation</h2>
+      </div>
+    </div>
+
+    <!-- video content -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <video id="example-video" autoplay muted loop controls playsinline style="width:100%; height:auto; margin-bottom:15px;">
+          <source src="./material_figure/text-to-motion.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- video title -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Emotion Understanding</h2>
+      </div>
+    </div>
+
+    <!-- video content -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <video id="example-video" autoplay muted loop controls playsinline style="width:100%; height:auto; margin-bottom:15px;">
+          <source src="./material_figure/emotion.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- video title -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Failure Case</h2>
+      </div>
+    </div>
+
+    <!-- video content -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <video id="example-video" autoplay muted loop controls playsinline style="width:100%; height:auto; margin-bottom:15px;">
+          <source src="./material_figure/failure.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- BibTeX Section -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{
+      chen2024body_of_language,
+      title={The Language of Motion: Unifying Verbal and Non-verbal Language of 3D Human Motion},
+      author={Changan Chen and Juze Zhang and Shrinidhi Kowshika Lakshmikanth and Yusu Fang and Ruizhi Shao and Gordon Wetzstein and Li Fei-Fei and Ehsan Adeli},
+      booktitle={arXiv},
+      year={2024},
+}</code></pre>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="./static/videos/nerfies_paper.pdf"><i class="fas fa-file-pdf"></i></a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled><i class="fab fa-github"></i></a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
