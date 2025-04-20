@@ -1,10 +1,10 @@
 # Exp_motion project page
 
-[Project page](xxx) for [arXiv 2024] The Language of Motion:
+[Project page](https://languageofmotion.github.io/) for [CVPR 2025] The Language of Motion:
 Unifying Verbal and Non-verbal Language of 3D Human Motion
 Environment
 
-[paper](xxx)
+[paper](https://arxiv.org/pdf/2412.10523)
 
 <!-- # Cayman theme
 
